@@ -1,6 +1,5 @@
-const parseData = input => {
-    const {data, column} = input;
-    const output = [];
+const parseData = ({data, column}) => {
+    let output = [];
     data.map(data => {
         let member = {};
         column.forEach((column, index) => member[column.name] = data[index]);
